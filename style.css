@@ -1,0 +1,185 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    border-bottom: 5px solid rgb(79, 150, 212);
+}
+.container{
+width: 95%;
+margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}
+.nav h2{
+font-size: 2rem;
+}
+.BotonBuscar{
+    position: relative;
+    width: 350px;
+}
+.BotonBuscar input{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 25px;
+    outline: none;
+
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+    border: 1px solid gray;
+}
+input:focus{
+    box-shadow: 0 0 5px #5264AE;
+    border: 1px solid #5264AE;
+}
+.BotonBuscar span{
+    color: black;
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    transition: 1.5%;
+}
+.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.img{
+    width: 380px;
+    height: 200px;
+    margin-top: 15px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 2px;
+}
+.favorite-btn.selected span {
+    color: red;
+}
+@media (max-width: 768px){
+    .img{
+        width: 100%;
+    }
+    .nav{
+        justify-content: center;
+    }
+    .nav h2{
+        padding: 5px 0;
+    }
+}
+@media (max-width: 480px){
+    .nav h2{
+    text-align: center;
+    font-size: 1.5rem;
+    }
+    .BotonBuscar{
+        width: 80%;
+        margin: auto;
+    }
+    .BotonBuscar input{
+        font-size: .7rem;
+    }
+}
+.back-to-search-btn {
+    display: block;
+    margin: 20px auto; /* Centrar el botón */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-to-search-btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+/* Modo Claro (Por defecto) */
+body {
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Estilos para el botón */
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Cambiar color de botones en modo oscuro */
+.dark-mode .btn-custom {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .btn-custom:hover {
+    background-color: #666;
+}
+
+.default-img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    opacity: 0.7;
+    align-content: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Ocultar la imagen si hay resultados */
+.grid:not(:empty) + .default-img {
+    display: none;
+}

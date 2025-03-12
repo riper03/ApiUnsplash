@@ -1,0 +1,38 @@
+{
+    "name":"Buscar",
+    "short_name":"BuscarImg",
+    "description":"Busca imagenes",
+    "lang" :"es",
+    "display" : "standalone",
+    "background_color" : "#000000",
+    "theme_color" : "#000000",
+    "orientation":"portrait",
+    "icons":[
+        {
+            "src" : "img/icono512.png",
+            "sizes" : "512x512",
+            "type" : "image/png"
+        },
+        {
+            "src" : "img/icono192.png",
+            "sizes" : "192x192",
+            "type" : "image/png"
+        }
+],
+"screenshots":[
+    {
+        "src" : "img/CapturaDesktop.png",
+        "sizes" : "1857x916",
+        "type" : "image/png",
+        "form_factor": "wide"
+    },
+    {
+        "src" : "img/CapturaMobile.png",
+        "sizes" : "448x806",
+        "type" : "image/png",
+        "form_factor": "narrow"
+    }
+],
+"id":"/index.html",
+"start_url": "/index.html"
+}
